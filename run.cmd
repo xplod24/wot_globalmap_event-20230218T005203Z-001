@@ -1,0 +1,3 @@
+@ECHO RUUNING SCRIPT...
+python newfile.py
+@pause
