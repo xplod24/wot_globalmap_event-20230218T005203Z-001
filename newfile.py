@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import requests
 import json
 import os
@@ -9,10 +10,8 @@ from datetime import *
 from alive_progress import *
 import PySimpleGUI as sg
 from tankopedia import *
-
-sys.path.append("/packages")
 sg.theme('Dark')
-
+sys.path.append("/packages")
 def files_delete():
     if os.path.isfile("filejson.json"):
         os.remove("filejson.json")
@@ -32,6 +31,7 @@ front_id = ""
 event_id = ""
 setnick_id = ""
 setnick_nick = ""
+clan_id = ""
 account = ""
 search = ""
 url = "https://api.worldoftanks.eu/wot/globalmap/events/?application_id=9ec1b1d893318612477ebc6807902c3c"
@@ -72,7 +72,7 @@ def run():
     exitbutton = [sg.Push(),sg.Button("Tankopedia"), sg.Exit(), sg.Push()]
     layout.append(exitbutton)
 
-    window = sg.Window("WOT Global Map Event Chcecker", layout, size=(400,300))
+    window = sg.Window("WOT Global Map Event Chcecker", layout)
     while True:
         event, values = window.read()
         print(event, values)
@@ -110,7 +110,7 @@ def search_by_nick():
     second_layout = [[sg.Push(), sg.Text("Wpisz nick szukanego gracza"), sg.Push()],
                      [sg.Push(), sg.InputText(), sg.Push()],
                      [sg.Push(), sg.Submit(), sg.Push()]]
-    window = sg.Window(layout=second_layout, size=(400,200), title=event_name)
+    window = sg.Window(layout=second_layout, title=event_name)
     event, values = window.read()
     print(event, values)
     if event == sg.WIN_CLOSED or event == 'Exit':
@@ -162,7 +162,7 @@ def search_by_nick():
     confirm = [sg.Push(), sg.Submit(), sg.Push()]
     third_layout.append(nicks)
     third_layout.append(confirm)
-    window = sg.Window(layout=third_layout, size=(400,400), title=msg_choices)
+    window = sg.Window(layout=third_layout, title=msg_choices)
     event, values = window.read()
     while True:
         if event == sg.WIN_CLOSED or event == 'Exit':
@@ -188,7 +188,7 @@ def search_by_nick():
 
     layout_fifth = [[sg.Push(), sg.Text("Szukać klanowo?"), sg.Push()],
                     [sg.Push(), sg.Button("Tak"), sg.Button("Nie"), sg.Push()]]
-    window = sg.Window(layout=layout_fifth, size=(400,400), title=msg_choices)
+    window = sg.Window(layout=layout_fifth, title=msg_choices)
     event, values = window.read()
     while True:
         if event == sg.WIN_CLOSED or event == 'Exit':
@@ -201,7 +201,7 @@ def search_by_nick():
     window.close()
 
 def clan_search_by_user_id():
-    global setnick_id
+    global setnick_id, clan_id, current_event_tank_place, event_id, front_id
     url1 = "https://api.worldoftanks.eu/wot/account/info/?application_id=9ec1b1d893318612477ebc6807902c3c&account_id="+str(setnick_id)
     
     response = requests.get(url1)
@@ -218,11 +218,36 @@ def clan_search_by_user_id():
         a.write(filejson2)
     json2_file = json.loads(filejson2)
     clan_members = json2_file["data"][str(clan_id)]["members"]
+    clanner = []
     for member in clan_members:
+        cl = []
         v = member["account_id"]
         b = member["account_name"]
-        print(str(v)+str(b))
+        url_by_nick = "https://api.worldoftanks.eu/wot/globalmap/eventaccountinfo/?application_id=9ec1b1d893318612477ebc6807902c3c&account_id="+str(v)+"&event_id="+str(event_id)+"&front_id="+str(front_id)
+        response = requests.get(url_by_nick)
+        filejson = response.content
 
+        # if os.path.isfile(f"users/{v}_acc.json"):
+        #     pass
+        # else:
+        with open(f"users/{v}_acc.json", "wb") as hh: 
+            hh.write(filejson)
+        accfile = json.loads(filejson)
+        acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
+        cl.append(v)
+        cl.append(b)
+        cl.append(acc_coins)
+        clanner.append(cl)
+    layout_clan_show = [[sg.Push(), sg.Table(clanner, ["Id", "Nickname", "PKT SŁAWY"], num_rows=10), sg.Push()],
+                        [sg.Exit()]]
+    window = sg.Window(layout=layout_clan_show, title="Clan members info")
+    event, values = window.read()
+    while True:
+        if event == sg.WIN_CLOSED or event == 'Exit':
+            sys.exit(0)
+        else:
+            break
+    window.close()
 
     msg_clan = "Clan id: "+str(clan_id)
     sg.popup(msg_clan, title="Klan")
@@ -276,7 +301,7 @@ def cycles():
     layout = [[sg.Push(), sg.Text("Wpisz co ile sekund program ma odświeżać statystyki"), sg.Push()],
                     [sg.Push(), sg.InputText(), sg.Push()],
                     [sg.Push(), sg.Submit(), sg.Push()]]
-    window = sg.Window(layout=layout, size=(400,200), title="Cykliczne odświeżanie")
+    window = sg.Window(layout=layout, title="Cykliczne odświeżanie")
     event, values = window.read()
     print(event, values)
     window.close()
@@ -290,7 +315,7 @@ csc = gh["data"][reply]["status"]
 if csc == "ACTIVE":
     cycle_layout = [[sg.Push(), sg.Text("Czy chcesz uruchomić cykliczne sprawdzanie?"), sg.Push()],
                     [sg.Push(),sg.Button("Tak"), sg.Button("Nie"), sg.Push()]]
-    window = sg.Window(layout=cycle_layout, size=(400,200), title="Cykliczne sprawdzanie")
+    window = sg.Window(layout=cycle_layout, title="Cykliczne sprawdzanie")
     event, values = window.read()
     while True:
         if event == sg.WIN_CLOSED or event == 'Nie':
