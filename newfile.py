@@ -10,8 +10,24 @@ from datetime import *
 from alive_progress import *
 import PySimpleGUI as sg
 from tankopedia import *
+import operator
+    
+def sort_table(table, cols):
+    """ sort a table by multiple columns
+        table: a list of lists (or tuple of tuples) where each inner list
+               represents a row
+        cols:  a list (or tuple) specifying the column numbers to sort by
+               e.g. (1,0) would sort by column 1, then by column 0
+    """
+    for col in reversed(cols):
+        try:
+            table = sorted(table, key=operator.itemgetter(col))
+        except Exception as e:
+            sg.popup_error('Error in sort_table', 'Exception in sort_table', e)
+    return table
+
 sg.theme('Dark')
-sys.path.append("/packages")
+sys.path.append("packages/")
 def files_delete():
     if os.path.isfile("filejson.json"):
         os.remove("filejson.json")
@@ -233,18 +249,31 @@ def clan_search_by_user_id():
         with open(f"users/{v}_acc.json", "wb") as hh: 
             hh.write(filejson)
         accfile = json.loads(filejson)
-        acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
+        if accfile["status"] == "error":
+            pass
+        elif accfile["status"] == "ok":
+            acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
         cl.append(v)
         cl.append(b)
         cl.append(acc_coins)
         clanner.append(cl)
-    layout_clan_show = [[sg.Push(), sg.Table(clanner, ["Id", "Nickname", "PKT SŁAWY"], num_rows=10), sg.Push()],
+    layout_clan_show = [[sg.Push(), sg.Table(clanner, ["Id", "Nickname", "PKT SŁAWY"], num_rows=10, enable_events=True, key="-TABLE-"), sg.Push()],
                         [sg.Exit()]]
-    window = sg.Window(layout=layout_clan_show, title="Clan members info")
+    
+    window = sg.Window(layout=layout_clan_show, title="Clan members info", finalize=True)
     event, values = window.read()
     while True:
         if event == sg.WIN_CLOSED or event == 'Exit':
             sys.exit(0)
+        if isinstance(event, tuple):
+        # TABLE CLICKED Event has value in format ('-TABLE=', '+CLICKED+', (row,col))
+            if event[0] == '-TABLE-':
+                if event[2][0] == -1 and event[2][1] != -1:           # Header was clicked and wasn't the "row" column
+                    col_num_clicked = event[2][1]
+                    new_table = sort_table(data[1:][:],(col_num_clicked, 0))
+                    window['-TABLE-'].update(new_table)
+                    data = [data[0]] + new_table
+                window['-CLICKED-'].update(f'{event[2][0]},{event[2][1]}')
         else:
             break
     window.close()
