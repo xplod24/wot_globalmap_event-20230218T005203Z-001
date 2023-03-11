@@ -11,14 +11,16 @@ from alive_progress import *
 import PySimpleGUI as sg
 from tankopedia import *
 import operator
-    
+import tabulate
+import logging
+
+logging.basicConfig(filename='operations.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+#Let us Create an object 
+logger=logging.getLogger() 
+#Now we are going to Set the threshold of logger to DEBUG 
+logger.setLevel(logging.DEBUG)
+
 def sort_table(table, cols):
-    """ sort a table by multiple columns
-        table: a list of lists (or tuple of tuples) where each inner list
-               represents a row
-        cols:  a list (or tuple) specifying the column numbers to sort by
-               e.g. (1,0) would sort by column 1, then by column 0
-    """
     for col in reversed(cols):
         try:
             table = sorted(table, key=operator.itemgetter(col))
@@ -54,7 +56,6 @@ url = "https://api.worldoftanks.eu/wot/globalmap/events/?application_id=9ec1b1d8
 search_url = "https://api.worldoftanks.eu/wot/account/list/?application_id=9ec1b1d893318612477ebc6807902c3c&search="+str(search)
 msg = "Wybierz EVENT do sprawdzenia"
 choices = []
-
 def run():
     global reply, front_id, event_id, url, msg, gh, asd
     event_response = requests.get(url)
@@ -62,7 +63,10 @@ def run():
     with open("events.json", "wb") as a:
         a.write(b)
     gh = json.loads(b)
-    asd = gh["data"]
+    if gh["status"] == "error":
+        pass
+    elif gh["status"] == "ok":
+        asd = gh["data"]
     mm = 0
     for i in asd:
         if i["status"] == "ACTIVE":
@@ -77,7 +81,20 @@ def run():
             else:
                 pass
         elif i["status"] == "FINISHED":
-            pass
+            if i["event_id"] == "we_2023":
+                i["event_name"] = "Wojna Bogów"
+                a = i["event_name"]
+                mm += 1
+                if a not in choices:
+                    choices.append(a)
+                else:
+                    pass
+            else:
+                a = i["event_name"]
+                if a not in choices:
+                    choices.append(a)
+                else:
+                    pass
         else:
             a = "Brak aktywnego eventu"
             choices.append(a)
@@ -96,24 +113,35 @@ def run():
             sys.exit(0)
         elif event == 'Submit':
             a = values["-BOX-"][0]
-            print (a)
+            ind = choices.index(a)
+            print(ind)
+            print(a)
             if a == "Wojna Bogów":
-                event_response = requests.get(url)
-                b = event_response.content
-                with open("events.json", "wb") as a:
-                    a.write(b)
-                gh = json.loads(b)
-                front_id = gh["data"][0]["fronts"][0]["front_id"]
-                event_id = gh["data"][0]["event_id"]
-                sg.popup("Wyszukiwanie Eventu", "Event znaleziony!")
-                reply = 0
+                front_id = gh["data"][ind]["fronts"]
+                event_id = gh["data"][ind]["event_id"]
+                if front_id:
+                    front_id = gh["data"][ind]["fronts"][0]["front_id"]
+                    sg.popup("Wyszukiwanie Eventu", f"Event id: {event_id}-{front_id} znaleziony!")
+                    reply = 0
+                else:
+                    window.close()
+                    sg.popup("Wyszukiwanie Eventu", f"Front z eventu {event_id} nie został odnaleziony. Aleja sław nie jest już dostępna.")
+                    run()
             else:
-                sg.popup("Wyszukiwanie Eventu - Błąd", "Brak aktywnego eventu!")
-                run()
+                front_id = gh["data"][ind]["fronts"]
+                event_id = gh["data"][ind]["event_id"]
+                if front_id:
+                    sg.popup("Wyszukiwanie Eventu", f"Event id: {event_id}-{front_id} znaleziony!")
+                    reply = 0
+                else:
+                    window.close()
+                    sg.popup("Wyszukiwanie Eventu", f"Front z eventu {event_id} nie został odnaleziony. Aleja sław nie jest już dostępna.")
+                    run()
             break
         elif event == "Tankopedia":
             get_tanks_to_json()
         elif event == "BRAK AKTYWNYCH EVENTÓW":
+            window.close()
             sg.popup("Wyszukiwanie Eventu - Błąd", "Brak aktywnego eventu!")
             run()
     window.close()
@@ -122,18 +150,29 @@ run()
 
 def search_by_nick():
     global event_name, event_id, event_name, search_url, search_file, setnick_id, search, setnick_nick
+    file = open("last_search.txt", "r")
+    read = file.read()
+
     event_name = event_id+" Wyszukiwanie Nicku Gracza"
     second_layout = [[sg.Push(), sg.Text("Wpisz nick szukanego gracza"), sg.Push()],
                      [sg.Push(), sg.InputText(), sg.Push()],
+                     [sg.Push(), sg.Text("Ostatnie wyszukiwanie"), sg.Push()],
+                     [sg.Push(), sg.StatusBar(text=read, key="-Search_History-"), sg.Push()],
                      [sg.Push(), sg.Submit(), sg.Push()]]
+    
     window = sg.Window(layout=second_layout, title=event_name)
     event, values = window.read()
     print(event, values)
     if event == sg.WIN_CLOSED or event == 'Exit':
-        window.close()
-        run()
+        sys.exit(0)
     if event == 'Submit':
-        search = values[0]
+        if values[0]:
+            search = values[0]
+            file = open("last_search.txt", "w")
+            file.write(str(search))
+            window["-Search_History-"].update(search)
+        print(event, values)
+        sg.popup("Trwa wyszukiwanie... ", no_titlebar=True, auto_close=True, auto_close_duration=2, grab_anywhere=True, modal=True, non_blocking=True)
         window.close()
     if search:
         pass
@@ -212,8 +251,8 @@ def search_by_nick():
         elif event == "Nie":
             break
         elif event == "Tak":
+            window.close()
             clan_search_by_user_id()
-            break
     window.close()
 
 def clan_search_by_user_id():
@@ -235,51 +274,95 @@ def clan_search_by_user_id():
     json2_file = json.loads(filejson2)
     clan_members = json2_file["data"][str(clan_id)]["members"]
     clanner = []
+
     for member in clan_members:
         cl = []
         v = member["account_id"]
         b = member["account_name"]
-        url_by_nick = "https://api.worldoftanks.eu/wot/globalmap/eventaccountinfo/?application_id=9ec1b1d893318612477ebc6807902c3c&account_id="+str(v)+"&event_id="+str(event_id)+"&front_id="+str(front_id)
-        response = requests.get(url_by_nick)
-        filejson = response.content
 
-        # if os.path.isfile(f"users/{v}_acc.json"):
-        #     pass
-        # else:
-        with open(f"users/{v}_acc.json", "wb") as hh: 
-            hh.write(filejson)
-        accfile = json.loads(filejson)
-        if accfile["status"] == "error":
-            pass
-        elif accfile["status"] == "ok":
-            acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
-        cl.append(v)
-        cl.append(b)
-        cl.append(acc_coins)
-        clanner.append(cl)
-    layout_clan_show = [[sg.Push(), sg.Table(clanner, ["Id", "Nickname", "PKT SŁAWY"], num_rows=10, enable_events=True, key="-TABLE-"), sg.Push()],
-                        [sg.Exit()]]
+        if os.path.isfile(f"users/{v}_acc.json"):
+            jsonloader = open(f"users/{v}_acc.json", "rb")
+            jsonloader2 = jsonloader.read()
+            accfile = json.loads(jsonloader2)
+            if accfile["status"] == "error":
+                pass
+            elif accfile["status"] == "ok":
+                acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
+            if accfile["status"] == "error":
+                pass
+            elif accfile["status"] == "ok":
+                cl.append(v)
+                cl.append(b)
+                cl.append(acc_coins)
+                clanner.append(cl)
+        else:
+            cl = []
+            v = member["account_id"]
+            b = member["account_name"]
+            if os.path.isfile(f"users/{v}_acc.json"):
+                os.path.remove(f"users/{v}.json")
+            url_by_nick = "https://api.worldoftanks.eu/wot/globalmap/eventaccountinfo/?application_id=9ec1b1d893318612477ebc6807902c3c&account_id="+str(v)+"&event_id="+str(event_id)+"&front_id="+str(front_id)
+            response = requests.get(url_by_nick)
+            filejson = response.content
+            with open(f"users/{v}_acc.json", "wb") as hh: 
+                hh.write(filejson)
+                accfile = json.loads(filejson)
+            if accfile["status"] == "error":
+                pass
+            elif accfile["status"] == "ok":
+                acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
+            if accfile["status"] == "error":
+                pass
+            elif accfile["status"] == "ok":
+                cl.append(v)
+                cl.append(b)
+                cl.append(acc_coins)
+                clanner.append(cl)
+
+    layout_clan_show = [[sg.Push(), sg.Table(values=clanner ,num_rows=10, key="-TABLE-", enable_click_events=True, headings=['Id', 'Nick', 'PKT SłAWY']), sg.Push()],
+                        [sg.Exit(),sg.Button('Odśwież dane')]]
     
-    window = sg.Window(layout=layout_clan_show, title="Clan members info", finalize=True)
-    event, values = window.read()
+    window = sg.Window(layout=layout_clan_show, title="Clan members info")
     while True:
+        event, values = window.read()
         if event == sg.WIN_CLOSED or event == 'Exit':
             sys.exit(0)
+
+        elif event == 'Odśwież dane':
+            for member in clan_members:
+                cl = []
+                v = member["account_id"]
+                b = member["account_name"]
+                if os.path.isfile(f"users/{v}_acc.json"):
+                    os.remove(f"users/{v}_acc.json")
+                url_by_nick = "https://api.worldoftanks.eu/wot/globalmap/eventaccountinfo/?application_id=9ec1b1d893318612477ebc6807902c3c&account_id="+str(v)+"&event_id="+str(event_id)+"&front_id="+str(front_id)
+                response = requests.get(url_by_nick)
+                filejson = response.content
+                with open(f"users/{v}_acc.json", "wb") as hh: 
+                    hh.write(filejson)
+                    accfile = json.loads(filejson)
+                if accfile["status"] == "error":
+                    pass
+                elif accfile["status"] == "ok":
+                    acc_coins = accfile["data"][str(v)]["events"][str(event_id)][0]["fame_points"]
+                cl.append(v)
+                cl.append(b)
+                cl.append(acc_coins)
+                clanner.append(cl)
+                window.close()
+                clan_search_by_user_id()
+
         if isinstance(event, tuple):
         # TABLE CLICKED Event has value in format ('-TABLE=', '+CLICKED+', (row,col))
             if event[0] == '-TABLE-':
                 if event[2][0] == -1 and event[2][1] != -1:           # Header was clicked and wasn't the "row" column
                     col_num_clicked = event[2][1]
-                    new_table = sort_table(data[1:][:],(col_num_clicked, 0))
+                    new_table = sort_table(clanner[1:][:],(col_num_clicked, 0))
                     window['-TABLE-'].update(new_table)
-                    data = [data[0]] + new_table
-                window['-CLICKED-'].update(f'{event[2][0]},{event[2][1]}')
-        else:
+                    clanner = [clanner[0]] + new_table
+        elif event == 'Exit':
             break
     window.close()
-
-    msg_clan = "Clan id: "+str(clan_id)
-    sg.popup(msg_clan, title="Klan")
 
 
 def acc_print():
@@ -293,21 +376,22 @@ def acc_print():
     account = json_file["data"][str(setnick_id)]["events"][str(event_id)]
     time = os.path.getmtime('filejson.json')
     time2 = datetime.fromtimestamp(time)
-    ts = datetime.fromtimestamp(account[0]["updated_at"])
     a = ("Plik zmodyfikowany: "+str(time2))
     b = ("--------------------------")
     c = ("Statystyki konta ("+ setnick_nick +") w wydarzeniu")
-    d = ("Czas aktualizacji: "+str(ts))
     e = ("PUNKTY SŁAWY: "+ str(account[0]["fame_points"]))
     f = ("Ranking: "+ str(account[0]["rank"]))
     g = ("Rozgrane bitwy: "+str(account[0]["battles"]))
     h = ("Punkty z ostatniej godziny: "+str(account[0]["fame_points_since_turn"]))
     j = ("Zmiana pozycji w rankingu: "+ str(account[0]["rank_delta"]))
-    if account[0]["rank"] <= current_event_tank_place:
-        i = ("CZOŁG IS SAFE")
+    if account[0]["rank"] is not None:
+        if account[0]["rank"] <= current_event_tank_place:
+            i = ("CZOŁG IS SAFE")
+        else:
+            i = ("PEPEHANDS")
     else:
-        i = ("PEPEHANDS")
-    acc_msg = a+"\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f+"\n"+g+"\n"+h+"\n"+j+"\n"+i
+        i = ("NAWET NIE GRAŁEŚ, PEPEANGRY")
+    acc_msg = a+"\n"+b+"\n"+c+"\n"+e+"\n"+f+"\n"+g+"\n"+h+"\n"+j+"\n"+i
     layout = [[sg.Push(),sg.Text(acc_msg),sg.Push()],
               [sg.Push(),sg.Button("Cykliczne sprawdzanie"),sg.Exit(),sg.Push()]]
     window = sg.Window(title="Informacje o koncie", layout=layout, auto_close=True, auto_close_duration=10)

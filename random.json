@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="pl" data-global-crop-class="global-crop" data-sidebar-mobile-class="crop-mobile" >
+<head>
+    
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({ S_Prod_Name: 'wot', S_Prod_Type: 'portal', S_Prod_Realm: 'eu', S_Prod_Lang: 'pl', S_Prod_Lptype: 'portal' });</script>
+
+    
+        
+    <script
+        type="text/javascript"
+        src="https://cdn.cookielaw.org/consent/7ad0a472-e9c4-4620-ab1b-875f1166355f/OtAutoBlock.js"
+    ></script>
+    <script
+        src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+        data-document-language="true"
+        data-domain-script="7ad0a472-e9c4-4620-ab1b-875f1166355f"
+    ></script>
+    
+    <script>
+        (function() {
+            var checkId = setInterval(function() {
+                if (window.OneTrust) {
+                    clearInterval(checkId);
+                    showOneTrustSdkButton();
+                }
+            }, 500);
+
+            function showOneTrustSdkButton() {
+                if (!window.OneTrust.GetDomainData) {
+                    return;
+                }
+                var onetrustLink = document.querySelector('.js-onetrust-link'),
+                    domainData = window.OneTrust.GetDomainData(),
+                    consentModel = domainData && domainData.ConsentModel;
+                if (!onetrustLink || !consentModel || consentModel.Name === 'notice only') {
+                    return;
+                }
+                onetrustLink.classList.remove(onetrustLink.dataset.hiddenClass);
+            }
+        })();
+    </script>
+
+        
+    
+    
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-58QVDL8');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5WXX');</script>
+    <!-- End Google Tag Manager -->
+    
+
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Błąd 404: Strona nie znaleziona </title>
+        <!--[if (IE 8)|(IE 9)]>
+            <script type="text/javascript">
+                window.location = '/pl/old-browsers/';
+            </script>
+        -->
+
+        <script type="text/javascript">
+            if (window.opera) {
+                window.location = '/pl/old-browsers/';
+            }
+        </script>
+    <link rel="icon" type="image/png" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="60x60" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/img/safari-pinned-16x16.svg" color="#474747">
+    <meta name="theme-color" content="#1c1c1e">
+
+    
+        
+            
+            
+
+            <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "ItemList",
+                "itemListElement": [
+                    
+                        
+                             
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 1,
+                                "name": "Gra",
+                                "url": "/pl/game/"
+                                
+                        
+                    
+                        
+                             },  
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 2,
+                                "name": "Przewodniki",
+                                "url": "/pl/content/guide/"
+                                
+                        
+                    
+                        
+                             },  
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 3,
+                                "name": "Klany",
+                                "url": "/pl/clanwars/?link_place=wotp_link_main-menu"
+                                
+                        
+                    
+                        
+                             },  
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 4,
+                                "name": "Turnieje",
+                                "url": "/pl/tournaments/"
+                                
+                        
+                    
+                        
+                    
+                        
+                             },  
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 5,
+                                "name": "Społeczność",
+                                "url": "/pl/community/"
+                                
+                        
+                    
+                    }
+                ]
+            }
+            </script>
+        
+    
+
+    
+        <link rel="sitemap" href="/sitemap.xml">
+    
+
+    
+    
+    
+        <meta name="Description" content="" />
+    
+    
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <meta content="unsafe-url" id="mref" name="referrer" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <link rel="canonical" href="https://worldoftanks.eu/pl/clanwars/rating/alley/users/" />
+
+    
+    
+    
+        <meta property="og:image" content="https://worldoftanks.eu/static/5.117.1_a28195/common/img/wot_artboard.png" />
+        <meta name="thumbnail" content="https://worldoftanks.eu/static/5.117.1_a28195/common/img/wot_artboard.png" />
+        <meta name="twitter:image:src" content="https://worldoftanks.eu/static/5.117.1_a28195/common/img/wot_artboard.png" />
+    
+
+    
+
+    
+        
+    
+    
+        
+            
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700%7CRoboto:400,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        
+
+        <link rel="stylesheet" type="text/css" href="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/css/main.css" media="screen" id="screenview" />
+
+        
+    
+
+    <script>
+        WG = window.WG || {};
+        WG.vars = WG.vars || {};
+    </script>
+    
+    <script>
+            WG.vars.COMMON_MENU_ENABLED = true;
+            WG.vars.COMMON_MENU_LOADER_TIMEOUT = 3000;
+            WG.vars.COMMON_MENU_COOKIE_PATH = '/';
+            WG.vars.COMMON_MENU_COOKIE_PREFIX = 'cm.options.';
+    </script>
+    <script async charset="utf-8" type="text/javascript" id="common_menu_loader" src="//cdn-cm.wgcdn.co/loader.min.js"
+        data-backend_url="//cm-eu.wargaming.net"
+	data-login_url="/auth/oid/new/"
+	data-token_url="/commonmenu/token/"
+	data-incomplete_profile_url="https://eu.wargaming.net/personal/"
+	data-user_id=""
+	data-content_layout_max_width="1440"
+	data-realm="eu"
+	data-service="ptl"
+	data-language="pl"
+	data-logout_url="/"
+	data-project="wot"
+	data-registration_url="/"
+	data-user_name=""
+    ></script>
+    
+
+    
+    
+
+
+<script>
+    window.Settings = window.Settings || {};
+    window.Settings.SITE_PATH = "/";
+
+    wgsdk = window.wgsdk || {};
+    wgsdk.vars = wgsdk.vars || {};
+
+    wgsdk.vars.ACCOUNT_AJAX_INFO_URL = "/ajax_info/";
+    wgsdk.vars.ACCOUNT_INFO_COOKIE_NAME = 'WGAI';
+    wgsdk.vars.CURRENT_REQUEST_LANGUAGE = 'pl';
+    wgsdk.vars.CURRENT_REALM = 'eu';
+
+    wgsdk.vars.DATE_DELIMITER = ".";
+    wgsdk.vars.DATE_FORMAT = "dmY";
+    wgsdk.vars.TIME_DELIMITER = ":";
+    wgsdk.vars.THOUSAND_SEPARATOR = " ";
+    wgsdk.vars.JS_TRUSTED_ROOTS = [];
+
+    wgsdk.vars.AUTH_CONFIRMATION_URL = "/auth/oid/confirm/";
+
+
+
+wgsdk.vars.WGCC_FE_URL = 'https://eu.wargaming.net/clans/';
+wgsdk.vars.WGCC_FE_CLAN_URL = 'https://eu.wargaming.net/clans/wot/clan_id/?utm_campaign=wot-portal&utm_medium=link&utm_source=main-menu';
+
+
+    wgsdk.vars.CLANWARS_SECOND_GLOBALMAP_INTERGATION_ENABLED = true;
+
+</script>
+
+
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/wg_browser_detection/wg_browser_detection.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/lodash/lodash.min.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/uri/URI.min.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/amplify/amplify.core.min.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/amplify/amplify.store.min.js"></script>
+
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/jquery/jquery.cookie.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195//portal/i18n/pl.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wgportalsdk/js/i18n_resources.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/wgsdk.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/wgsdk.time.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/resolution_manager.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/crop_manager.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/page_wrapper_manager.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/helper.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/platform_manager.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/menubuilder/main_menu.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/wgsdk.forms.js"></script>
+
+
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/wgsdk.account_info.js"></script>
+
+
+    <script type="text/javascript" src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/csrf/js/csrf.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            csrf.init({
+                COOKIE_NAME: "csrftoken",
+                COOKIE_URL: "/set_csrf_cookie/"
+            });
+
+            window.Settings = window.Settings || {};
+            window.Settings.CSRF_TOKEN = csrf.token;
+        })
+    </script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/porthole/porthole.min.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/jsbase/js/scripts.js"></script>
+
+<script>
+        window.Settings.HOME_URL = "/pl/";
+    </script>
+<script type="text/javascript">
+(function(window) {
+    window.Settings = window.Settings || {};
+    window.Settings.AuthenticationSSO = {"signinJsonpCallbackParameter": "callback", "signinMode": "notification", "checkIsAuthenticated": false, "signinJsonpUrl": "https://eu.wargaming.net/id/sso/signin/jsonp/", "attemptImmediateCookie": {"path": "/", "domain": ".worldoftanks.eu", "secure": true, "name": "ptl_auth_sso_attempt_immediate", "samesite": "none"}, "isAuthenticated": 0};
+})(window);
+</script>
+<script type="text/javascript">
+(function(window) {
+    window.Settings = window.Settings || {};
+    window.Settings.AuthenticationBase = {
+        'ErrorCodeUnauthorized': 401
+    };
+})(window);
+</script>
+<script type="text/javascript">
+(function(window) {
+    window.Settings = window.Settings || {};
+    window.Settings.AuthenticationOID = {"OpenIdVerifyUrl": "https://worldoftanks.eu/auth/oid/verify/", "OpenIdProcessTokenQueryParameter": "openid_process_token", "OpenIdVerifyImmediateUrl": "https://worldoftanks.eu/auth/oid/verify/immediate/", "LogoutUrl": "/auth/notify/signout/", "LogoutErrorRedirectUrl": "/pl/", "OpenIdTrustRootUseCurrentHost": false, "OpenIdProcessStatusUrlTemplate": "/auth/oid/process/status/<%= token %>/"};
+})(window);
+</script>
+<script type="text/javascript" charset="utf-8" src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/authenticationoid/js/openid.js"></script>
+
+
+    
+        
+    
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/geoip/region_widget.js"></script>
+    
+
+
+
+    
+    <script>
+        $(function(){
+            var botPattern = '(Googlebot|Bingbot|DuckDuckBot|Baiduspider|YandexBot|facebot|ia_archiver|Google Page Speed Insights|crawler|spider|robot|facebookexternalhit|heritrix)',
+                regExp = new RegExp(botPattern, 'i');
+
+            if (navigator && !regExp.test(navigator.userAgent)) {
+                new RegionWidget('challenge', '/geoip/region_widget/', 'popup');
+            }
+        });
+    </script>
+    
+
+
+    
+
+    
+        <script>
+    var PENDING_OPERATION_JAVASCRIPT_TIMEOUT = 15,
+        IFRAME_PROXY = 'https://worldoftanks.eu/utils/ssl_proxy/';
+</script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/modernizr/modernizr.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/jquery/jquery.mousewheel.js"> </script>
+
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/common/wot_hl_common.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/common/tooltips.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/common/wg_media_helper.js"></script>
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/init_cookie_referrer.js"></script>
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/iscroll/iscroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wgcms/js/widget_ajax_loader.js"></script>
+<script>
+    $(function() {
+        var SPOILER_OPEN_CLASS = 'b-spoiler__open',
+            SPOILER_LINK_SELECTOR = '.js-spoiler-link',
+            SPOILER_LINK_HIDE_CLASS = 'b-vertical-arrow__hide',
+            SPOILER_MAIN_SELECTOR = '.js-spoiler-main',
+            SPOILER_SELECTOR = '.js-spoiler',
+            SPOILER_LINK_OPEN_CLASS = 'b-vertical-arrow__open',
+            ANIMATE_SPEED = 300,
+            $spoilerLink = $(SPOILER_LINK_SELECTOR);
+
+        $spoilerLink.off('.spoiler').on('click.spoiler', function(event) {
+            var $spoilerMain = $(this).parents(SPOILER_SELECTOR),
+                scrollTop = $(window).scrollTop(),
+                offset = $spoilerMain.offset();
+
+            event.preventDefault();
+            if ($(this).hasClass(SPOILER_LINK_OPEN_CLASS) && scrollTop >= offset.top) {
+                $spoilerMain[0].scrollIntoView();
+            }
+            $spoilerMain.find(SPOILER_LINK_SELECTOR).toggleClass(SPOILER_LINK_HIDE_CLASS);
+            $spoilerMain.toggleClass(SPOILER_OPEN_CLASS).find(SPOILER_MAIN_SELECTOR).slideToggle(ANIMATE_SPEED);
+        });
+    });
+</script>
+
+
+
+        
+        
+        
+        
+
+        
+    
+
+    
+
+    
+        <script type="text/javascript">
+            var NEWBIE_LIFETIME_COOKIE_NAME = 'newbie_lifetime',
+                NEWBIE_SESSION_COOKIE_NAME = 'newbie_session',
+                NEWBIE_LIFETIME_COOKIE_EXPIRATION_PERIOD = 1000,
+                VETERAN_COOKIE_NAME = 'uvt',
+                VETERAN_COOKIE_EXPIRATION_PERIOD = 365;
+        </script>
+        <script type="text/javascript" src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/user_recognition.js"></script>
+    
+    
+
+    
+</head>
+
+   
+    <body class="reg-EUR lang-pl " data-popup-visible="crop" data-sidebar-mobile-class="crop-mobile" data-overlay-show-class="overlay__show">
+
+    
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58QVDL8&S_Prod_Name=wot&S_Prod_Type=portal&S_Prod_Realm=eu&S_Prod_Lang=pl&S_Prod_Lptype=portal"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WXX&S_Prod_Name=wot&S_Prod_Type=portal&S_Prod_Realm=eu&S_Prod_Lang=pl&S_Prod_Lptype=portal"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+
+    
+
+    
+
+<div class="page-wrapper js-page-wrapper page-wrapper__404 " data-popup-mobile-hidden="page-wrapper__hidden">
+    <div class="page-wrapper_inner">
+        
+        
+            <div class="sparkles "></div>
+        
+        
+            <nav class="nav">
+    <a class="nav_item nav_item__menu js-mobile-mainmenu-link" href="#"><span class="nav_hamburger">Menu</span></a>
+    <a class="nav_item nav_item__wot" href="/">World of Tanks</a>
+    <a class="nav_item nav_item__cm js-mobile-commonmenu-link" href="#" data-mobile-open-class="nav_item__cm" data-mobile-close-class="nav_item__cm-open">Wargaming.net</a>
+</nav>
+
+
+<div class="nav-wrapper  js-mainmenu-wrapper"
+     data-mobile-menu-opened-class="nav-wrapper__open"
+     data-mobile-menu-crop-class="mobile-menu-crop"
+     data-scroll-bottom-class="nav-wrapper__bottom"
+     data-scroll-bottom-initial-class="nav-wrapper__bottom-initial"
+     data-scroll-top-class="nav-wrapper__top"
+     data-scroll-top-initial-class="nav-wrapper__top-initial">
+
+    <div class="nav-wrapper_holder">
+        <ul class="nav-submenu">
+            <li class="js-mainmenu-item nav-submenu_item nav-submenu_item__wot" data-opened-class="nav-submenu_item__open">
+                <a class="nav-submenu_link" href="/"></a>
+            </li>
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item   " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="/pl/game/" class="nav-submenu_link">Gra<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/game/download/">Pobierz grę</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://eu.wargaming.net/shop/redeem/?utm_content=bonus-code&amp;link_place=wotp_link_main-menu">Odbierz kody bonusowe</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/news/">Wiadomości</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/ratings/">Rankingi</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/docs/release_notes/">Aktualizacje</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/tankopedia/">Czołgopedia</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/music/">Muzyka</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item   " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="/pl/content/guide/" class="nav-submenu_link">Przewodniki<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/newcomers-guide/">Przewodnik nowicjusza</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/general/">Przewodnik ogólny</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/wot_economy/">Ekonomia gry</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/account_security/">Zabezpieczenie konta</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/general/achievements/">Osiągnięcia</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/fair_play/">Zasady fair play</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/general/wgc_guide/">Wargaming.net Game Center</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/tank-manuals/">Poradniki do czołgów</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/guide/twitch-drops/">Przewodnik po Twitch Drops</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item nav-submenu_item__active nav-submenu_item__current " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="/pl/clanwars/?link_place=wotp_link_main-menu" class="nav-submenu_link">Klany<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/clanwars/strongholds/">Twierdza</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://eu.wargaming.net/globalmap/?link_place=wotp_link_main-menu">Mapa globalna</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://eu.wargaming.net/clans/wot/leaderboards/?link_place=wotp_link_main-menu">Klasyfikacja klanów</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item nav-detail_item__hidden js-portal-menu-clans-index-link">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://eu.wargaming.net/clans/wot/?link_place=wotp_link_main-menu">Portal klanowy</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item nav-detail_item__hidden js-portal-menu-clan-link">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://eu.wargaming.net/clans/wot/clan_id/?link_place=wotp_link_main-menu">Mój klan</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/clanwars/rating/alley/">Aleja Sław</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item   " data-opened-class="nav-submenu_item__open">
+                    
+                        <a
+                            
+                            href="/pl/tournaments/"
+                            class="nav-submenu_link">
+                            Turnieje
+                        </a>
+                    
+                </li>
+                
+            
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item   " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="/pl/community/" class="nav-submenu_link">Społeczność<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/community/accounts/show/me/">Mój profil</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/community/accounts/">Wyszukaj graczy</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/content/docs/referral-program-regulations/">Zwerbuj znajomego</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="http://forum.worldoftanks.eu/index.php?/forum/1460-/&amp;link_place=wotp_link_main-menu">Forum</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://wgmods.net/?link_place=wotp_link_main-menu">Centrum modów</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/media/">Media</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="/pl/content/soft/">Przydatne oprogramowanie</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+        </ul>
+        <div class="nav-wrapper_side-container">
+            
+                <div class="nav-wrapper_buttons js-menu-side-button" data-hidden-class="nav-wrapper_buttons__hidden">
+                    
+                        
+                            <div class="nav-wrapper_side-button js-menu-side-button-wrapper-desktop">
+                                <a class="big-button big-button__small big-button__secondary js-referer js-menu-side-button-register" href="http://red.wargaming.net/7hbx4i30/" data-secondary-class="big-button__secondary">
+                                    <span class="big-button_text">Stwórz konto</span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="nav-wrapper_side-button js-menu-side-button-wrapper-tablet">
+                                <a class="big-button big-button__small big-button__secondary js-referer js-menu-side-button-register-mobile" href="http://red.wargaming.net/7hbx4i30/">
+                                    <span class="big-button_text">Stwórz konto</span>
+                                </a>
+                            </div>
+                            <div class="nav-wrapper_side-button js-menu-side-button-wrapper-mobile">
+                                <a class="big-button big-button__large big-button__secondary js-referer js-menu-side-button-register-mobile" href="http://red.wargaming.net/7hbx4i30/">
+                                    <span class="big-button_text big-button_text__large">Stwórz konto</span>
+                                </a>
+                            </div>
+                        
+                    
+                </div>
+            
+        </div>
+        <span class="nav-wrapper_close js-mobile-mainmenu-close-link">Zamknij</span>
+    </div>
+</div>
+        
+        
+            <div class="cm-holder js-commonmenu-holder" data-mobile-opened-class="cm-holder__open">
+                
+                    <!-- common_menu: start -->
+<div id="common_menu">
+    <noscript>
+        <div id="common_menu_frame_wrap">
+            <iframe id="common_menu_frame" src="//cm-eu.wargaming.net/frame?backend_url=%2F%2Fcm-eu.wargaming.net&login_url=%2Fauth%2Foid%2Fnew%2F&token_url=%2Fcommonmenu%2Ftoken%2F&incomplete_profile_url=https%3A%2F%2Feu.wargaming.net%2Fpersonal%2F&content_layout_max_width=1440&realm=eu&service=ptl&language=pl&logout_url=%2F&project=wot&registration_url=%2F"></iframe>
+        </div>
+    </noscript>
+</div>
+<!-- common_menu: end -->
+
+
+<script type="text/javascript" content="utf-8">
+    if (WG.vars.COMMON_MENU_ENABLED && WG.CommonMenu) {
+        WG.CommonMenu.trigger('holder_ready');
+    }
+</script>
+    <div id="js-common-menu-fallback" class="commonmenu-fallback" data-visible-class="commonmenu-fallback__visible">
+        
+<script>
+
+
+wgsdk.vars.REGISTRATION_URL = 'http://cpm.wargaming.net/7hbx4i30/?pub_id=cmenu_';
+
+
+</script>
+
+
+
+
+<script>
+wgsdk.vars.DEFAULT_LANGUAGE = 'en';
+wgsdk.vars.ALL_LANGUAGES = {"ru": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439", "fr": "Fran\u00e7ais", "en": "English", "ko": "\ud55c\uad6d\uc5b4", "uk": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "es-ar": "Espa\u00f1ol \u2014 Am\u00e9rica Latina", "zh-sg": "\u7b80\u4f53\u4e2d\u6587\uff08\u65b0\u52a0\u5761)", "vi": "Ti\u1ebfng Vi\u1ec7t", "de": "Deutsch", "tr": "T\u00fcrk\u00e7e", "it": "Italiano", "hu": "Magyar", "zh-cn": "\u4e2d\u6587", "pt-br": "Portugu\u00eas", "es": "Espa\u00f1ol", "th": "\u0e44\u0e17\u0e22", "zh-tw": "\u7e41\u9ad4\u4e2d\u6587", "cs": "\u010ce\u0161tina", "ja": "\u65e5\u672c\u8a9e", "pl": "Polski"};
+wgsdk.vars.FRONTEND_LANGUAGES = {"ru": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439", "fr": "Fran\u00e7ais", "en": "English", "de": "Deutsch", "tr": "T\u00fcrk\u00e7e", "it": "Italiano", "hu": "Magyar", "pl": "Polski", "uk": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "cs": "\u010ce\u0161tina", "es": "Espa\u00f1ol"};
+
+wgsdk.vars.LANG_NAME_KEY = 'LANG_NAME_KEY';
+wgsdk.vars.LANG_CODE_KEY = 'LANG-CODE-KEY';
+wgsdk.vars.SPA_ID_KEY = '123456';
+wgsdk.vars.NICKNAME_KEY = 'NICKNAME_KEY';
+wgsdk.vars.LANG_COOKIE_NAME = 'hllang';
+
+
+</script>
+
+
+<script>
+
+
+wgsdk.vars.REGISTRATION_URL = 'http://cpm.wargaming.net/7hbx4i30/?pub_id=cmenu_';
+
+
+</script>
+
+
+<ul class="commonmenu-fallback_list" id="js-sdk_top_right_menu">
+
+    
+
+    
+
+
+    <li id="js-auth-wrapper" style="display:none">
+        <span class="commonmenu-fallback_text js-common-menu-fallback-error" style="display: none;">Nie udało się zalogować.</span>
+        <div class="commonmenu-fallback_loader js-common-menu-fallback-loader" style="display: none;"></div>
+
+        <span class="commonmenu-fallback_text">
+            <a href="/auth/oid/new/?next=/pl/clanwars/rating/alley/users/%3Fevent_id%3Dwe_2023%26front_id%3Dwe_2023_bg%26page%3D0%26page_size%3D25%26user%3D%26clan%3D" data-next-url="/pl/clanwars/rating/alley/users/?event_id=we_2023&amp;front_id=we_2023_bg&amp;page=0&amp;page_size=25&amp;user=&amp;clan=" class="js-auth-openid-link commonmenu-fallback_link">
+            <span>Wejdź</span>
+            </a>
+
+            <span class="js-registration_url" style="display: none">
+                lub <a href="" class="js-referer js-common-menu-fallback-register commonmenu-fallback_link" >stwórz konto</a>
+            </span>
+        </span>
+
+    </li>
+
+    <li id="js-auth-wrapper-nickname" style="display:none">
+
+        <span class="commonmenu-fallback_text">
+
+            
+            <a class="js-my_profile_link js-my_profile_nickname commonmenu-fallback_link" href="/pl/community/accounts/show/me/" data-full_link="/pl/community/accounts/123456-NICKNAME_KEY/">
+                Mój profil
+            </a>
+            
+
+        </span>
+        <span class="commonmenu-fallback_text">
+            <a href="#" class="js-auth-logout-link commonmenu-fallback_link" data-return-to="https://worldoftanks.eu/pl/clanwars/rating/alley/users/">Wyloguj się</a>
+        </span>
+
+    </li>
+</ul>
+
+
+    </div>
+                
+            </div>
+            <script type="text/javascript" src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/menu_loader.js"></script>
+        
+
+        <div class="content-wrapper content-wrapper__flex">
+            
+            
+                
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/knockout-3.4.2.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/spin/spin2.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/wg_ko_bindings.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/plugins/hammer/hammer.min.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/content_slider.js"></script>
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/related_content/js/related.ko.js"></script>
+
+    <script>
+        window.RELATED_URL = '/related_content/api/important_news/?lang=' + window.get_lang() + '&limit=4';
+
+        $(function() {
+            if (history.length > 1) {
+                $('.js-link-back').on('click', function(event) {
+                    event.preventDefault();
+                    history.back();
+                });
+            } else {
+                $('.js-link-back').parent().hide();
+                $('.js-without-history').show();
+            }
+
+            amplify.subscribe('relatedcontent:ready', function() {
+                new ContentSlider({
+                    container: $('.js-related-list-404').get(0),
+                    alignment: 'center'
+                });
+            });
+        });
+    </script>
+
+                
+                
+<div class="error-page">
+    <div class="error-page_inner">
+        <h1 class="error-page_title">Strony nie odnaleziono</h1>
+        
+        
+        
+        
+        <p class="error-page_text">
+            Strona, której szukasz nie istnieje lub podany adres jest niepoprawny.
+        </p>
+        <p class="error-page_text">
+            Przejdź <a class="js-link-back" href="#">wstecz</a> do poprzedniej strony, lub idź do naszej <a href="/">strony głównej</a>.
+        </p>
+        <p class="error-page_text js-without-history" style="display: none;">
+            Odwiedź naszą <a href="/">stronę główną</a>.
+        </p>
+    </div>
+</div>
+
+<div>
+    <div class="wrapper">
+        <div class="js-related-component" data-bind="component: {'name': 'related', params: {'url': window.RELATED_URL}}">
+            <section class="related">
+                <h2 class="related_title">Ostatnie wiadomości
+                    <a class="link-more link-more__left-indent" href="/pl/news/">Wszystkie wiadomości</a>
+                </h2>
+                <div class="related_list-wrapper">
+                    <div class="related_list related_list__transition js-related-list-404" data-slider-transition-class="related_list__transition" data-bind="foreach: relatedObjects">
+                        <div class="related_item js-slider-frame">
+                            <a class="related_link s-related-link js-related-link-404 js-related-image-holder" data-bind="attr: {'href': url}">
+                                <span class="related_front" data-bind="text: title, style: {'background-image': ('url(\'' + preview + '\')') }" draggable="false"></span>
+                                <h2 class="related_annotation" data-bind="text: title"></h2>
+                            </a>
+                            <span class="related_time">
+                                <a class="related_category" data-bind="text: category, attr: {'href': category_url}"></a>
+                                <span class="related_date" data-bind="relativeTime: publication_start"></span>
+                                <a class="related_discuss" data-bind="'visible': forum_topic_url.length > 0, attr: {'href': forum_topic_url}">Dyskutuj</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots js-slider-container">
+                    <div class="slider-dots_item js-slider-element" data-active-class="slider-dots_item__active"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+            
+
+            
+            
+        </div>
+
+        
+            <div class="footer js-footer">
+    <div class="footer_holder">
+        
+            
+                
+                
+                    <div class="footer-social">
+                        
+                            <a
+                                href="https://www.facebook.com/WorldOfTankspolski/"
+                                class="footer-social_item footer-social_item__fb"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="https://www.youtube.com/@WorldofTanksPolska"
+                                class="footer-social_item footer-social_item__yt"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="https://www.tiktok.com/@worldoftanksofficial"
+                                class="footer-social_item footer-social_item__tiktok"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="https://www.instagram.com/worldoftanks_official/"
+                                class="footer-social_item footer-social_item__ig"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="https://twitter.com/worldoftanks"
+                                class="footer-social_item footer-social_item__tw"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="https://www.twitch.tv/worldoftanks"
+                                class="footer-social_item footer-social_item__twitch"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="https://discord.gg/world-of-tanks"
+                                class="footer-social_item footer-social_item__ds"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                            <a
+                                href="http://forum.worldoftanks.eu/index.php?/forum/50-forum/"
+                                class="footer-social_item footer-social_item__forum"
+                                target="_blank"
+                                rel="noopener"
+                            ></a>
+                        
+                    </div>
+                
+            
+        
+    </div>
+    <div class="footer_wrapper">
+        <div class="footer_holder">
+            
+            
+            
+            
+            
+            
+            
+            <div class="footer_links">
+                <div class="footer-logo">
+                    
+                        <a class="footer-logo_link" href="https://wargaming.net" target="_blank" rel="noopener">wargaming.net</a>
+                    
+                </div>
+                
+                
+                    <ul class="footer-menu">
+                        <li class="footer-menu_item">
+                            <a class="footer-menu_link" href="https://eu.wargaming.net/support/products/wot/?link_place=wotp_link_footer">Wsparcie Gracza</a>
+                        </li>
+                        <li class="footer-menu_item">
+                            <a class="footer-menu_link" href="https://wargaming.com/en/partners/">Partnerzy</a>
+                        </li>
+                        
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="https://legal.eu.wargaming.net/pl/eula/">Umowa licencyjna dla użytkownika końcowego</a>
+                            </li>
+                        
+                        
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="https://legal.eu.wargaming.net/pl/privacy-policy/">Polityka prywatności</a>
+                            </li>
+                        
+                        
+                        
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="https://legal.eu.wargaming.net/pl/game-rules/">Zasady gry</a>
+                            </li>
+                        
+                        
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="https://eu.wargaming.net/family/">Kontrola rodzicielska</a>
+                            </li>
+                        
+                        
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="http://wargaming.com/en/careers/" target="_blank" rel="noopener">Kariera</a>
+                            </li>
+                        
+                        <li class="footer-menu_item footer-menu_item__hidden js-onetrust-link" data-hidden-class="footer-menu_item__hidden">
+                            <a href="#" id="ot-sdk-btn" class="onetrust ot-sdk-show-settings"></a>
+                        </li>
+                        <li class="footer-menu_item js-footer-item-region">
+                            <a class="change-region js-change-region" data-lang-class-prefix="change-region__" href="#" data-opened-class="change-region__open" data-no-text-class="change-region__no-text">Europe (English)</a>
+                        </li>
+                    </ul>
+
+                
+                
+            </div>
+        </div>
+    </div>
+    
+        <div class="region-selector  js-region-selector" data-opened-class="region-selector__open">
+    <div class="region-selector_inner">
+        <div class="region-selector_header">
+            <div class="region-selector_header-section">
+                <div class="region-selector_title">Wybierz region</div>
+                <div class="region-selector_subtitle">Wybór innego regionu może wpłynąć na zawartość strony.</div>
+            </div>
+            <div class="region-selector_header-section region-selector_header-section__underline"></div>
+        </div>
+        <div class="region-selector_holder js-region-selector_holder">
+            
+                
+                
+
+                
+
+                
+
+                
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__current-EUR">
+                            <p class="region-selector_name">Europa:</p>
+                            <div class="region-selector_groups">
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/cs/" class="region-selector_link region-selector_link__cs" data-region-name="Europa">Čeština</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/de/" class="region-selector_link region-selector_link__de" data-region-name="Europa">Deutsch</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/en/" class="region-selector_link region-selector_link__en" data-region-name="Europa">English</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/es/" class="region-selector_link region-selector_link__es" data-region-name="Europa">Español</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/fr/" class="region-selector_link region-selector_link__fr" data-region-name="Europa">Français</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/it/" class="region-selector_link region-selector_link__it" data-region-name="Europa">Italiano</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/hu/" class="region-selector_link region-selector_link__hu" data-region-name="Europa">Magyar</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item region-selector_item__current">
+                                            
+                                                <span class="region-selector_link region-selector_link__pl js-current-region" data-region-name="Europa">Polski</span>
+                                            
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/ru/" class="region-selector_link region-selector_link__ru" data-region-name="Europa">Русский</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/tr/" class="region-selector_link region-selector_link__tr" data-region-name="Europa">Türkçe</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/uk/" class="region-selector_link region-selector_link__uk" data-region-name="Europa">Українська</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__USA">
+                            <p class="region-selector_name">Ameryka Północna i Południowa:</p>
+                            <div class="region-selector_groups">
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__en" href="//worldoftanks.com/set_language/en/?next=worldoftanks.com" data-region-name="Ameryka Północna i Południowa">English</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__es-ar" href="//worldoftanks.com/set_language/es-ar/?next=worldoftanks.com" data-region-name="Ameryka Północna i Południowa">Español — América Latina</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__pt-br" href="//worldoftanks.com/set_language/pt-br/?next=worldoftanks.com" data-region-name="Ameryka Północna i Południowa">Português</a>
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__SG">
+                            <p class="region-selector_name">Azja:</p>
+                            <div class="region-selector_groups">
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__en" href="//worldoftanks.asia/set_language/en/?next=worldoftanks.asia" data-region-name="Azja">English</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__ja" href="//worldoftanks.asia/set_language/ja/?next=worldoftanks.asia" data-region-name="Azja">日本語</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__ko" href="//worldoftanks.asia/set_language/ko/?next=worldoftanks.asia" data-region-name="Azja">한국어</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__th" href="//worldoftanks.asia/set_language/th/?next=worldoftanks.asia" data-region-name="Azja">ไทย</a>
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__zh-sg" href="//worldoftanks.asia/set_language/zh-sg/?next=worldoftanks.asia" data-region-name="Azja">简体中文（新加坡)</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__zh-tw" href="//worldoftanks.asia/set_language/zh-tw/?next=worldoftanks.asia" data-region-name="Azja">繁體中文</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__vi" href="//worldoftanks.asia/set_language/vi/?next=worldoftanks.asia" data-region-name="Azja">Tiếng Việt</a>
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                
+            
+        </div>
+    </div>
+    <a href="#" class="region-selector_close js-close-region"></a>
+</div>
+    
+    <script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195//portal/js/region_footer.js"></script>
+
+    
+    
+
+    <div class="footer_bottom">
+        <div class="footer_bottom-wrapper ">
+            
+            
+            <div class="footer_pegi">
+                
+                
+                    
+                    <a href="http://www.pegi.info/" target="_blank" rel="noopener" title="PEGI">
+                        <img src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/wotp_static/img/core/frontend/scss/common/blocks/footer/img/pegi_PL.png" alt="" class="pegi" />
+                    </a>
+                    
+                
+                
+            </div>
+            
+            
+                <div class="footer_copyright">
+                    <div class="footer_copyright-text">
+                        
+                            © 2009–2023 <a class="footer_text-link" href="http://wargaming.net/">Wargaming.net</a> Wszelkie prawa zastrzeżone. Obsługiwana przez BigWorld Technology™ ©
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+    
+</div>
+        
+
+        
+    </div>
+</div>
+
+
+
+<div class="overlay js-region-selector-mobile" data-overlay-show-class="overlay__show">
+    <div class="popup">
+        <div class="popup_holder js-popup-holder">
+            <div class="popup_body">
+                <div class="popup_content">
+                    
+                    
+                        <div class="region-selector region-selector__mobile js-region-selector" data-opened-class="region-selector__open">
+    <div class="region-selector_inner">
+        <div class="region-selector_header">
+            <div class="region-selector_header-section">
+                <div class="region-selector_title">Wybierz region</div>
+                <div class="region-selector_subtitle">Wybór innego regionu może wpłynąć na zawartość strony.</div>
+            </div>
+            <div class="region-selector_header-section region-selector_header-section__underline"></div>
+        </div>
+        <div class="region-selector_holder js-region-selector_holder">
+            
+                
+                
+
+                
+
+                
+
+                
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__current-EUR">
+                            <p class="region-selector_name">Europa:</p>
+                            <div class="region-selector_groups">
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/cs/" class="region-selector_link region-selector_link__cs" data-region-name="Europa">Čeština</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/de/" class="region-selector_link region-selector_link__de" data-region-name="Europa">Deutsch</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/en/" class="region-selector_link region-selector_link__en" data-region-name="Europa">English</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/es/" class="region-selector_link region-selector_link__es" data-region-name="Europa">Español</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/fr/" class="region-selector_link region-selector_link__fr" data-region-name="Europa">Français</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/it/" class="region-selector_link region-selector_link__it" data-region-name="Europa">Italiano</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/hu/" class="region-selector_link region-selector_link__hu" data-region-name="Europa">Magyar</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item region-selector_item__current">
+                                            
+                                                <span class="region-selector_link region-selector_link__pl js-current-region" data-region-name="Europa">Polski</span>
+                                            
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/ru/" class="region-selector_link region-selector_link__ru" data-region-name="Europa">Русский</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/tr/" class="region-selector_link region-selector_link__tr" data-region-name="Europa">Türkçe</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item ">
+                                            
+                                                <a href="/set_language/uk/" class="region-selector_link region-selector_link__uk" data-region-name="Europa">Українська</a>
+                                            
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__USA">
+                            <p class="region-selector_name">Ameryka Północna i Południowa:</p>
+                            <div class="region-selector_groups">
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__en" href="//worldoftanks.com/set_language/en/?next=worldoftanks.com" data-region-name="Ameryka Północna i Południowa">English</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__es-ar" href="//worldoftanks.com/set_language/es-ar/?next=worldoftanks.com" data-region-name="Ameryka Północna i Południowa">Español — América Latina</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__pt-br" href="//worldoftanks.com/set_language/pt-br/?next=worldoftanks.com" data-region-name="Ameryka Północna i Południowa">Português</a>
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__SG">
+                            <p class="region-selector_name">Azja:</p>
+                            <div class="region-selector_groups">
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__en" href="//worldoftanks.asia/set_language/en/?next=worldoftanks.asia" data-region-name="Azja">English</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__ja" href="//worldoftanks.asia/set_language/ja/?next=worldoftanks.asia" data-region-name="Azja">日本語</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__ko" href="//worldoftanks.asia/set_language/ko/?next=worldoftanks.asia" data-region-name="Azja">한국어</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__th" href="//worldoftanks.asia/set_language/th/?next=worldoftanks.asia" data-region-name="Azja">ไทย</a>
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                                    
+                                        <div class="region-selector_group">
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__zh-sg" href="//worldoftanks.asia/set_language/zh-sg/?next=worldoftanks.asia" data-region-name="Azja">简体中文（新加坡)</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__zh-tw" href="//worldoftanks.asia/set_language/zh-tw/?next=worldoftanks.asia" data-region-name="Azja">繁體中文</a>
+                                        </div>
+                                    
+                                    
+                                
+                                    
+                                    
+                                        
+                                        <div class="region-selector_item">
+                                            <a class="region-selector_link region-selector_link__vi" href="//worldoftanks.asia/set_language/vi/?next=worldoftanks.asia" data-region-name="Azja">Tiếng Việt</a>
+                                        </div>
+                                    
+                                    
+                                        </div>
+                                    
+                                
+                            </div>
+                        </div>
+                    
+                
+            
+        </div>
+    </div>
+    <a href="#" class="region-selector_close js-close-region"></a>
+</div>
+                    
+                </div>
+            </div>
+            <a href="#" class="popup_close-fixed js-close-region"></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+<div class="videopopup js-tank-videopopup" data-active-class="videopopup__show">
+    <div class="videopopup_wrapper js-videopopup-wrapper" data-width-class="videopopup_wrapper__width-calc">
+        <div class="videopopup_inner">
+            <div class="videopopup_holder js-videopopup-holder" data-title-class="videopopup_holder__title" data-native-video-class="videopopup_video" data-native-video-title-class="videopopup_video__title">
+                <iframe class="videopopup_frame js-videopopup-frame" data-title-class="videopopup_frame__title" allowfullscreen></iframe>
+                <div class="videopopup_title js-videopopup-title">
+                    <a href="#" class="link-external link-external__light js-videopopup-link" target="_blank" rel="noopener">
+                        <span class="js-videopopup-link-text"></span>&nbsp;<span class="link-external_ico"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="videopopup_close js-trailer-close" href="#">Zamknij</a>
+</div>
+
+
+<div class="support"></div>
+
+
+
+
+    <script type="text/javascript">
+    (function() {
+        window.Settings = window.Settings || {};
+        window.Settings.AuthenticationConfirmation = {"path": "/auth/oid/confirm/", "secondsLeft": 0, "expiresAtCookie": {"path": "/", "name": "authentication_confirmation_expires_at"}, "storedData": {}};
+    })();
+</script>
+<script type="text/javascript" src="//eu-wotp.wgcdn.co/static/5.117.1_a28195//authenticationconfirmation/js/scripts.js"></script>
+
+
+
+
+<script src="//eu-wotp.wgcdn.co/static/5.117.1_a28195/portal/js/visitor_info.js"></script>
+
+</body>
+</html>

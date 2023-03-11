@@ -1,0 +1,6 @@
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldoftanks.eu:443
+urllib3.connectionpool - DEBUG - https://api.worldoftanks.eu:443 "GET /wot/globalmap/events/?application_id=9ec1b1d893318612477ebc6807902c3c HTTP/1.1" 200 None
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldoftanks.eu:443
+urllib3.connectionpool - DEBUG - https://api.worldoftanks.eu:443 "GET /wot/account/list/?application_id=9ec1b1d893318612477ebc6807902c3c&search=xplod24 HTTP/1.1" 200 185
+urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.worldoftanks.eu:443
+urllib3.connectionpool - DEBUG - https://api.worldoftanks.eu:443 "GET /wot/globalmap/eventaccountinfo/?application_id=9ec1b1d893318612477ebc6807902c3c&account_id=501628953&event_id=we_2023&front_id=we_2023_bg HTTP/1.1" 200 387
